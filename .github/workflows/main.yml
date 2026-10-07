@@ -6,7 +6,7 @@ on:
     branches:
       -main
 
-job:
+jobs:
   pandas:
     runs-on: ubantu_latest
       
