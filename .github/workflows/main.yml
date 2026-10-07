@@ -1,1 +1,21 @@
 
+name: pandas as installation
+
+on:
+  push:
+    branches:
+      -main
+
+job:
+  pandas:
+    runs-on: ubantu_latest
+      
+    steps:
+      - name: checkout
+        uses: action/checkout@v7
+
+      - name: pandas installation
+        run: pip install -r requriment.txt
+
+      - name: file name 
+        run: python data.py
